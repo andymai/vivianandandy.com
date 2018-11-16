@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Vivian & Andy are getting married!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Reem+Kufi|Signika+Negative:600" rel="stylesheet">
   <style>
     html,
     body,
@@ -138,15 +139,82 @@
       border-spacing: 0;
     }
 
+    html {
+      height: 100%;
+    }
+
     body {
       background: #282F27 url('./engagement.jpg') top center no-repeat;
       background-size: 100%;
+      width: 100%;
+      height: 100%;
+      font-family: 'Reem Kufi', sans-serif;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        background-size: 250%;
+      }
+    }
+
+    #wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    #countdown {
+      display: block;
+      padding: 0 16px;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 8vw;
+      text-align: center;
+      position: relative;
+      top: 18%;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.9)
     }
   </style>
 </head>
 
 <body>
+   <div id="wrapper"><span id="countdown"></span></div>
+<script>
+    CountDownTimer('05/25/2019 12:00 AM', 'countdown');
+    function CountDownTimer(dt, id) {
+        var end = new Date(dt);
 
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML = days + ' days ';
+            document.getElementById(id).innerHTML += hours + 'h ';
+            document.getElementById(id).innerHTML += minutes + 'm ';
+            document.getElementById(id).innerHTML += seconds + 's';
+        }
+        timer = setInterval(showRemaining, 1000);
+    }
+</script>
 </body>
 
 </html>
