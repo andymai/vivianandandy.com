@@ -1,0 +1,46 @@
+.event {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  margin: 0 0 38px;
+
+  &__time {
+    height: 20px;
+    position: sticky;
+    top: 28px;
+    margin: 0;
+    padding: 6px 0;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  &__info {
+    border-left: 1px dotted #ccc;
+    padding-left: 24px;
+
+    &__title {
+      font-size: 21px;
+      margin-top: 3px;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    address {
+      padding: 18px 16px 16px;
+      border-radius: 6px;
+      border: 1px solid rgba(0,0,0,.1);
+      box-shadow: 0 0 30px rgba(0,0,0,.08);
+      cursor: pointer;
+      &:hover {
+        border: 1px solid purple;
+      }
+    }
+
+    &__location {
+      font-size: 16px;
+      margin: 0 0 4px;
+      padding: 0;
+    }
+
+    &__address {
+      font-size: 16px;
+    }
+  }
+}

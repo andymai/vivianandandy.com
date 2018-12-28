@@ -1,0 +1,39 @@
+.nav-wrapper {
+  @media screen and (min-width: 800px) {
+    width: 50%;
+  }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+.nav {
+  list-style: none;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 -2px 15px rgba(0,0,0,.15);
+  li {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: block;
+    padding: 14px 0 8px;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    i {
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin: 0 auto 6px;
+      background: #ccc;
+    }
+    a {
+      text-decoration: none;
+      color: #3d3d3d;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+  }
+}

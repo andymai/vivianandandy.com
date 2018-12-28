@@ -1,0 +1,38 @@
+.welcome-pane {
+  @media only screen and (min-width: 800px) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+  }
+  position: relative;
+  min-height: 480px;
+  background: url('https://res.cloudinary.com/andymai/image/upload/q_auto,f_auto/v1545605744/wedding/welcome-photo.jpg') top center no-repeat;
+  background-size: cover;
+  z-index: 1000;
+
+  &__content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
+    h1, p {
+      text-shadow: 0 2px 15px rgba(0,0,0,0.66);
+    }
+    h1 {
+      @media only screen and (min-width: 800px) {
+        font-size: 72px;
+      }
+      font-size: 48px;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      font-size: 28px;
+    }
+    .button {
+      
+    }
+  }
+}
