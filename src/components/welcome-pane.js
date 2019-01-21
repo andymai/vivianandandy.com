@@ -5,9 +5,8 @@ import './welcome-pane.scss'
 const WelcomePane = () => (
   <div className="welcome-pane">
     <div className="welcome-pane__content">
-      <h1>Vivian &amp; Andy</h1>
+      <img src="https://res.cloudinary.com/andymai/image/upload/v1546216957/wedding/vivandy.svg"/>
       <p>Saturday, May 25, 2019</p>
-      <Button title="RSVP" href="" cta/>
     </div>
   </div>
 )

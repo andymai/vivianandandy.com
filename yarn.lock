@@ -7297,6 +7297,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+material-icons-font@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/material-icons-font/-/material-icons-font-1.4.2.tgz#b4d159436320301400a0426022a23ff8350776af"
+  integrity sha512-+Ff24oX8Qgg/v+rjV38Y6pD+zzak2/gmZbKPmyRVQw28fJthqtWKswF1R6WS9lpcnh8+DjZwtuLpjuqzpFXLVA==
+
 math-random@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/math-random/-/math-random-1.0.1.tgz#8b3aac588b8a66e4975e3cdea67f7bb329601fac"
@@ -9360,6 +9365,11 @@ react-side-effect@^1.1.0:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
+
+react-truncate@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-truncate/-/react-truncate-2.4.0.tgz#3cf5ff09ab86f93e3c078d359f4de6d75aa60510"
+  integrity sha512-3QW11/COYwi6iPUaunUhl06DW5NJBJD1WkmxW5YxqqUu6kvP+msB3jfoLg8WRbu57JqgebjVW8Lknw6T5/QZdA==
 
 react@^16.6.3:
   version "16.7.0"

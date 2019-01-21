@@ -1,5 +1,19 @@
 .sub-section {
   display: grid;
-  grid-template-columns: 48px 1fr;
-  margin: 0 0 40px 0;
+  grid-template-columns: 36px 1fr;
+  margin: 38px 0 40px 0;
+
+  &__content {
+    h3 {
+      font-family: 'PT Sans', sans-serif;
+      margin: 0 0 8px;
+      padding: 0;
+    }
+    p:first-of-type {
+      margin-top: 0;
+    }
+    .button {
+      margin-top: 16px;
+    }
+  }
 }

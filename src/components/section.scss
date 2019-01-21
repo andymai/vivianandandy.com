@@ -1,4 +1,7 @@
 .section {
+  @media (max-width: 480px) {
+    padding: 40px 18px;
+  }
   padding: 40px;
   &__heading {
     margin: 0 auto 20px;
@@ -11,15 +14,34 @@
     padding: 0 16px;
     z-index: 200;
   }
+  h4 {
+    margin: 38px auto 16px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  img.store {
+    display: block;
+    max-width: 150px;
+    margin: 75px auto;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
   p {
     font-family: 'PT Serif', serif;
     font-size: 20px;
     line-height: 1.7;
     color: rgba(0,0,0,.75);
     text-rendering: optimizelegibility;
-    font-smoothing: antialiased;
-    max-width: 700px;
+    -webkit-font-smooth: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     margin: 38px auto 0;
+    &:first-of-type {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
     &.lead:first-letter  {
       float: left;
       color: rgba(0,0,0,.85);
@@ -30,11 +52,12 @@
       padding-left: 3px;
     }
     &.note {
-      font-size: 16px;
-      padding: 14px 16px 16px;
+      font-size: 15px;
+      padding: 0 0 16px;
       margin: 19px 0;
-      border-radius: 4px;
-      background: rgba(0,0,0,.03)
+      sup {
+        margin-right: 4px;
+      }
     }
   }
 }

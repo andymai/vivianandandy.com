@@ -13,26 +13,39 @@
   z-index: 1000;
 
   &__content {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    color: #fff;
-    h1, p {
-      text-shadow: 0 2px 15px rgba(0,0,0,0.66);
+    @media only screen and (min-width: 800px) {
+      bottom: 40px;
+      left: 40px;
     }
-    h1 {
-      @media only screen and (min-width: 800px) {
-        font-size: 72px;
+    @media (max-width: 480px) {
+      left: 0;
+      bottom: 18px;
+    }
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    color: #fff;
+    img {
+      @media (max-width: 480px) {
+        margin: 0 auto 8px;
       }
-      font-size: 48px;
-      margin: 0;
+      display: block;
+      max-width: 80%;
+      margin: 0 0 14px;
       padding: 0;
+      filter: drop-shadow(0 2px 15px rgba(0,0,0,.66));
     }
     p {
-      font-size: 28px;
-    }
-    .button {
-      
+      @media (max-width: 480px) {
+        text-align: center;
+      }
+      color: #c7afab;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-shadow: 2px 2px 15px rgba(0,0,0,.66);
+      margin: 0 0 18px;
     }
   }
 }

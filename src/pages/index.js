@@ -25,6 +25,10 @@ const IndexPage = () => (
       <p>We are super excited to celebrate our love and commitment this May, and look forward to embarking on their next great adventure together as husband and wife.</p>
     </Section>
 
+    <Section>
+      <Button cta title="Click here to RSVP" href="https://goo.gl/forms/sUzSbFcyzo0hx7Hm2" target="_blank" ></Button>
+    </Section>
+
     <Section title="Schedule" anchor="schedule">
       <DayTitle/>
       <Event
@@ -33,9 +37,10 @@ const IndexPage = () => (
         title="Ceremony"
         location="Aragon Family Cabin"
         address="993 Boulder Mountain Drive, South Lake Tahoe, CA 96150"
+        url="https://www.google.com/maps/place/993+Boulder+Mountain+Dr,+South+Lake+Tahoe,+CA+96150/@38.8868968,-120.0356966,17z/data=!3m1!4b1!4m5!3m4!1s0x80998ee56b2ba9b5:0xfd0894069a3cea22!8m2!3d38.8868926!4d-120.0335026"
       >
-        <p>Join us for a ceremony at the majestic rocks in our backyard followed by champagne toast. We'll also be planting a celebratory tree!</p>
-      <p className='note'>Please wear appropriate footwear! There is a short walk to the rocks on uneven terrain.</p>
+        <p>Join us for a ceremony at the majestic rocks behind the house<sup>*</sup> followed by a champagne toast and tree planting!</p>
+        <p className='note'><sup>*</sup>Please no heeled shoes! There is a short walk to the rocks on uneven terrain.</p>
       </Event>
       <Event
         start="5:00PM"
@@ -43,8 +48,9 @@ const IndexPage = () => (
         title="Reception"
         location="Beach Retreat &amp; Lodge"
         address="3411 Lake Tahoe Blvd., South Lake Tahoe, CA 96150"
+        url="https://www.google.com/maps/place/3411+Lake+Tahoe+Blvd,+South+Lake+Tahoe,+CA+96150/data=!4m2!3m1!1s0x8099900415c54fe9:0x9f122933536e6dc?ved=2ahUKEwjJwo2P4sjfAhVMGTQIHVJBDScQ8gEwAHoECAAQAQ"
       >
-        <p>Wine and dine by a lakeside patio.</p>
+        <p></p>
       </Event>
       <Event
         start="9:00PM"
@@ -52,63 +58,65 @@ const IndexPage = () => (
         title="After Party"
         location="Boathouse on the Pier, Beach Retreat &amp; Lodge"
         address="Walking distance from reception"
+        url="https://www.google.com/maps/place/3411+Lake+Tahoe+Blvd,+South+Lake+Tahoe,+CA+96150/data=!4m2!3m1!1s0x8099900415c54fe9:0x9f122933536e6dc?ved=2ahUKEwjJwo2P4sjfAhVMGTQIHVJBDScQ8gEwAHoECAAQAQ"
       >
-        <p>Come dance with us in an intimate bar/boathouse on the pier!</p>
+        <p>Come dance with us in the intimate bar / boathouse on the pier!</p>
       </Event>
     </Section>
 
     <Section title="Travel" anchor="travel">
       <SubSection
-        icon="../images/ic_airplanemode_active_24px.svg"
+        icon="local_airport"
         title="Getting There"
       >
         <p>The closest airport is Reno-Tahoe International Airport, which is about a 1 hour drive. If you are not renting a car, there is a shuttle service from the airport to South Lake Tahoe. Let us know if you plan to take the shuttle and we can arrange to pick you up when you get into town.</p>
         <Button title="Shuttle Info" href="http://southtahoeairporter.com/"/>
       </SubSection>
       <SubSection
-        icon="../images/ic_airplanemode_active_24px.svg"
+        icon="hotel"
         title="Accomodations"
       >
         <p>We are pleased to offer a block of rooms available at a discounted price at the Beach Retreat & Lodge, the venue where we will be hosting the reception. This offer will be available until 4/24/19, so please make your reservations before then!</p>
         <Button title="Book Online" href="https://reservations.travelclick.com/97034?groupID=2302649"/>
-        <Button title="Book via Phone" href=""/>
       </SubSection>
     </Section>
 
     <Section title="Registry" anchor="registry">
-      <SubSection
-        icon="../images/ic_airplanemode_active_24px.svg"
-      >
-        <Button title="Heath Ceramics" href=""/>
-      </SubSection>
+      <a href="https://www.zola.com/registry/andyandvivian" target="_blank"><img className='store' src="https://d1tntvpcrzvon2.cloudfront.net/vnassets/static/media/zola-logo-horizontal-black.34453bcb.svg" /></a>
+      <a href='https://www.heathceramics.com/apps/giftregistry/registry/58727?shared_url=true' target="_blank"><img className='store' src="https://res.cloudinary.com/andymai/image/upload/v1546222323/wedding/heathceramics.png" /></a>
     </Section>
     
     <Section title="FAQ" anchor="faq">
-      <Faq q="What should I wear?">
+      <SubSection 
+        icon="help_outline"
+        title="What should I wear?">
         <p>Something festive! It is an outdoors event and it gets chilly at night in the mountains, so please bring warm layers to keep yourself comfortable.</p>
-      </Faq>
-      <Faq q="What kind of shoes should I wear?">
-        <p>IMPORTANT!!! The ceremony site is a short walk through the woods behind Sergio and Sophie’s house. The ground is uneven and there is no formal trail. Please wear sturdy shoes for this part of the event!!! We will provide hiking poles to anyone who wants additional support. The reception site is on a patio by the lake, so feel free to wear any type of shoes for that. </p>
-      </Faq>
-      <Faq q="What will the weather be like?">
-        <p>Put weather forecast here</p>
-        <Button title="Check Weather" href="https://weather.com/weather/tenday/l/USCA1083:1:US"/>
-      </Faq>
-      <Faq q="How long should we stay?">
-        <p>We hope you will be able to enjoy the holiday weekend in Tahoe! We are staying until Monday, so we hope to see you on the beach on Sunday afternoon :)</p>
-      </Faq>
-      <Faq q="What is there to do in South Lake Tahoe?">
+      </SubSection>
+      <SubSection
+        icon="help_outline"
+        title="What kind of shoes should I wear?">
+        <p>The ceremony site is a short walk through the woods behind Sergio and Sophie’s house. The ground is uneven and there is no formal trail. Please wear sturdy shoes for this part of the event. We will provide hiking poles to anyone who wants additional support. The reception site is on a patio by the lake, so feel free to wear any type of shoes for that. </p>
+      </SubSection>
+      <SubSection 
+        icon="help_outline"
+        title="What will the weather be like?">
+        <p>High of 64&#8457; &#9675; Low of 34&#8457;.</p>
+      </SubSection>
+      <SubSection
+        icon="help_outline"
+        title="How long should we stay?">
+        <p>We hope you will be able to enjoy the 3-day holiday weekend in Tahoe! We are staying until Monday, so we hope to see you on the beach on Sunday afternoon :)</p>
+      </SubSection>
+      <SubSection 
+        icon="help_outline"
+        title="What is there to do in South Lake Tahoe?">
         <p>Hiking, mountain biking, water sports, relaxing on the beach, casinos at Stateline. </p>
-      </Faq>
-      <Faq q="What are some good hikes?">
+      </SubSection>
+      <SubSection 
+        icon="help_outline"
+        title="What are some good hikes?">
         <p>Emerald Bay, Mt. Tallac, Maggie’s Peaks, Angora Lakes, Echo Lakes.	</p>
-      </Faq>
-      <Faq q="Where should we eat?">
-        <p></p>
-      </Faq>
-      <Faq q="Where should we drink beer?">
-        <p></p>
-      </Faq>
+      </SubSection>
     </Section>
   </Layout>
 )

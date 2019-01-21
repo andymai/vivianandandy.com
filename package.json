@@ -15,11 +15,13 @@
     "gatsby-plugin-sharp": "^2.0.14",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
+    "material-icons-font": "^1.4.2",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-truncate": "^2.4.0"
   },
   "keywords": [
     "gatsby"
@@ -37,5 +39,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/andymai/vivianandandy.com"
-  },
+  }
 }
