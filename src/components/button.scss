@@ -18,20 +18,32 @@
 
   // Modifiers
   &--cta {
-    background: rgb(51,51,51);
+    transition: top .15s ease-in;
+    top: 0;
+    left: 50%;
+    transform: translate(-150px, -48px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+    background: #ff6f61;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.15);
     border: none;
-    border-radius: 4px;
-    display: block;
-    padding: 15px 24px 17px;
-    color: #fff;
-    margin: 10px 0;
-    font-size: 14px;
-    font-weight: bold;
+    position: absolute;
+    padding-top: 12px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
     text-align: center;
+    z-index: 100;
     &:hover {
-      background: #604c8d;
+      background: darken(#ff6f61, 10%);
       border-color: white;
       color: white;
+      top: -5px;
     }
   }
 }

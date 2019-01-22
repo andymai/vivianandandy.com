@@ -25,10 +25,6 @@ const IndexPage = () => (
       <p>We are super excited to celebrate our love and commitment this May, and look forward to embarking on their next great adventure together as husband and wife.</p>
     </Section>
 
-    <Section>
-      <Button cta title="Click here to RSVP" href="https://goo.gl/forms/sUzSbFcyzo0hx7Hm2" target="_blank" ></Button>
-    </Section>
-
     <Section title="Schedule" anchor="schedule">
       <DayTitle/>
       <Event
