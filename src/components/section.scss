@@ -30,8 +30,11 @@
     }
   }
   p {
+    @media(min-width: 480px) {
+      font-size: 20px
+    }
     font-family: 'PT Serif', serif;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.7;
     color: rgba(0,0,0,.75);
     text-rendering: optimizelegibility;
