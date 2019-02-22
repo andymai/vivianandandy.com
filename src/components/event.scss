@@ -1,6 +1,6 @@
 .event {
   @media (max-width: 480px) {
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 20% 1fr;
   }
   display: grid;
   grid-template-columns: 25% 1fr;
@@ -17,7 +17,7 @@
 
   &__info {
     border-left: 1px dotted #ccc;
-    padding-left: 24px;
+    padding-left: 16px;
     font-family: 'PT Serif', serif;
     p {
       margin: 0 0 18px;

@@ -14,6 +14,7 @@ const DayTitle = () => (
       fontFamily: 'PT Sans, sans-serif',
       letterSpacing: 1,
       zIndex: 1000,
+      width: '100%'
     }}>Saturday, May 25, 2019</h4>
   </React.Fragment>
   
