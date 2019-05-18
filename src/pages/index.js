@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
@@ -10,8 +11,11 @@ import Button from '../components/button'
 
 const IndexPage = () => (
   <Layout>
+    <Helmet>
+      <title>Vivian + Andy are getting married!</title>
+      <link rel="canonical" href="https://vivianandandy.com" />
+    </Helmet>
     <Nav />
-
     <Section title="Our Story" anchor="story">
       <p className='lead'>Our first date was at a little Belgian beer bar called The Trappist in May 2012. We were both living in Oakland at the time, and coincidentally, discovered that we lived only 4 blocks away from each other! Initially, we thought we didn’t have a lot in common. Andy was a designer working in tech and spent most of his time in the virtual world. Vivian was a professional dancer and liked cooking and the outdoors. But there were two very important things that brought us together: First, a shared love of exploring and trying new things. And second, cats!</p>
 
