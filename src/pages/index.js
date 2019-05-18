@@ -64,13 +64,22 @@ const IndexPage = () => (
         title="Getting There"
       >
         <p>The closest airport is Reno-Tahoe International Airport, which is about a 1 hour drive. If you are not renting a car, there is a shuttle service from the airport to South Lake Tahoe. Let us know if you plan to take the shuttle and we can arrange to pick you up when you get into town.</p>
-        <Button title="Shuttle Info" href="http://southtahoeairporter.com/"/>
+        <Button title="Airport Shuttle Info" href="http://southtahoeairporter.com/"/>
+
+        <p>If you are staying at the Beach Retreat &amp; Lodge, they offer a free shuttle that picks up in Heavenly Village (walking distance from where airport shuttle drops off) every hour on the hour. The hotel recommends calling to reserve your spot (530) 541-6722.</p>
+      </SubSection>
+      <SubSection
+        icon="directions_car"
+        title="Parking"
+      >
+        <p><strong>Ceremony</strong>: Feel free to park anywhere along Boulder Mountain Drive. It is a quiet residential neighborhood and there should be plenty of space.</p>
+        <p><strong>Reception</strong>: If you are a hotel guest at the Beach Retreat, park in the hotel parking lot with your parking pass. If you are not staying at the Beach Retreat, you can park in the visitor parking area in front of the hotel or in the Safeway parking lot across the street. </p>
       </SubSection>
       <SubSection
         icon="hotel"
         title="Accommodations"
       >
-        <p>We are pleased to offer a block of rooms available at a discounted price at the Beach Retreat & Lodge, the venue where we will be hosting the reception. This offer will be available until 4/24/19, so please make your reservations before then!</p>
+        <p>We are pleased to offer a block of rooms available at a discounted price at the Beach Retreat &amp; Lodge, the venue where we will be hosting the reception. This offer will be available until 4/24/19, so please make your reservations before then!</p>
         <Button title="Book Online" href="https://reservations.travelclick.com/97034?groupID=2302649"/>
         <p>If you would like to add any additional nights beyond Fri-Sat-Sun, upgrade to a lakeview or beachfront room, or any other requests, you can call 530-541-6722 ext. 7455 and mention you want to make a reservation for the Aragon-Mai Wedding group. The Group Code is <strong>GWEDAM</strong>.</p>
       </SubSection>
@@ -85,7 +94,7 @@ const IndexPage = () => (
       <SubSection
         icon="help_outline"
         title="What should I wear?">
-        <p>Something festive! It is an outdoors event and it gets chilly at night in the mountains, so please bring warm layers to keep yourself comfortable.</p>
+        <p>Dressy casual and fun. Whatever makes you feel fancy and ready to celebrate. It is an outdoors event and it gets chilly at night in the mountains, so please bring warm layers to keep yourself comfortable.</p>
       </SubSection>
       <SubSection
         icon="help_outline"
@@ -95,7 +104,8 @@ const IndexPage = () => (
       <SubSection
         icon="help_outline"
         title="What will the weather be like in May?">
-        <p>High of 64&#8457; &#9675; Low of 34&#8457;.</p>
+        <p>High of 56&#8457; &#9675; Low of 34&#8457;. There is a slight chance of rain/snow!</p>
+        <Button title="View 10-Day Forecast" href="https://weather.com/weather/tenday/l/USCA1083:1:US"/>
       </SubSection>
       <SubSection
         icon="help_outline"
@@ -116,9 +126,10 @@ const IndexPage = () => (
         icon="help_outline"
         title="Where should we eat?">
         <ul>
+          <li><a href="https://www.sproutscafetahoe.com/" target="_blank" rel="noopenner norefferer">Sprouts Cafe</a></li>
+          <li><a href="https://blueangelcafe.com/" target="_blank" rel="noopenner norefferer">Blue Angel Cafe</a></li>
           <li><a href="http://www.sushitahoe.com/" target="_blank" rel="noopenner norefferer">Samurai Restaurant</a></li>
           <li><a href="http://www.scusalaketahoe.com/" target="_blank" rel="noopenner norefferer">Scusa Italian Ristorante</a></li>
-          <li><a href="https://blueangelcafe.com/" target="_blank" rel="noopenner norefferer">Blue Angel Cafe</a></li>
           <li><a href=" https://www.edgewoodtahoe.com/dine-imbibe" target="_blank" rel="noopenner norefferer">Edgewood Tahoe</a></li>
         </ul>
       </SubSection>
