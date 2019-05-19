@@ -4,6 +4,7 @@ import './nav.scss'
 
 const Nav = () => (
   <nav className='nav-wrapper'>
+    <Button cta title="Click here to RSVP" href="https://goo.gl/forms/sUzSbFcyzo0hx7Hm2" target="_blank" ></Button>
     <ul className='nav'>
       <li><a href="#story"><i class="material-icons">change_history</i>Story</a></li>
       <li><a href="#schedule"><i class="material-icons">list</i>Schedule</a></li>
