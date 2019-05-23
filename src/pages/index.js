@@ -67,7 +67,8 @@ const IndexPage = () => (
         icon="local_airport"
         title="Getting There"
       >
-        <p>The closest airport is Reno-Tahoe International Airport, which is about a 1 hour drive. If you are not renting a car, there is a shuttle service from the airport to South Lake Tahoe. Let us know if you plan to take the shuttle and we can arrange to pick you up when you get into town.</p>
+        <p>The closest airport is Reno-Tahoe International Airport, which is about a 1 hour drive.</p>
+        <p>If you are not renting a car, there is a shuttle service from the Reno airport to South Lake Tahoe (Harrah's Casino). Let us know if you plan to take the shuttle and we can arrange to pick you up when you get into town.</p>
         <Button title="Airport Shuttle Info" href="http://southtahoeairporter.com/"/>
 
         <p>If you are staying at the Beach Retreat &amp; Lodge, they offer a free shuttle that picks up in Heavenly Village (walking distance from where airport shuttle drops off) every hour on the hour. The hotel recommends calling to reserve your spot (530) 541-6722.</p>
